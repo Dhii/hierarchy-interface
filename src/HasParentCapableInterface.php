@@ -5,14 +5,14 @@ namespace Dhii\Data\Hierarchy;
 /**
  * Something that can check for its parent.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface HasParentCapableInterface
 {
     /**
      * Checks whether this instance has a parent.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return bool True if this instance has a parent; false otherwise.
      */

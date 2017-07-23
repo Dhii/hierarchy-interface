@@ -7,14 +7,14 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \Dhii\Data\Hierarchy\SiblingsAwareInterface}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class SiblingsAwareInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return \Dhii\Data\Hierarchy\SiblingsAwareInterface The new instance of the test subject.
      */
@@ -31,7 +31,7 @@ class SiblingsAwareInterfaceTest extends TestCase
     /**
      * Tests if a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {

@@ -7,14 +7,14 @@ use Traversable;
 /**
  * Something that can have its siblings retrieved.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface SiblingsAwareInterface extends HasSiblingsCapableInterface
 {
     /**
      * Get a list of this instance's siblings.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return mixed[]|Traversable A list of siblings of this instance.
      */
