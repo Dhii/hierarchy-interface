@@ -12,6 +12,13 @@ use Xpmock\TestCase;
 class HasParentCapableInterfaceTest extends TestCase
 {
     /**
+     * The name of the test subject.
+     *
+     * @since 0.1
+     */
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Hierarchy\\HasParentCapableInterface';
+
+    /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
@@ -20,7 +27,7 @@ class HasParentCapableInterfaceTest extends TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\\Data\\Hierarchy\\HasParentCapableInterface')
+        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->hasParent()
             ->new();
 
@@ -36,6 +43,6 @@ class HasParentCapableInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf('Dhii\\Data\\Hierarchy\\HasParentCapableInterface', $subject, 'A valid instance of the test subject could not be created');
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
     }
 }

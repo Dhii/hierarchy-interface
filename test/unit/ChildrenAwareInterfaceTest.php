@@ -12,6 +12,13 @@ use Xpmock\TestCase;
 class ChildrenAwareInterfaceTest extends TestCase
 {
     /**
+     * The name of the test subject.
+     *
+     * @since 0.1
+     */
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Hierarchy\\ChildrenAwareInterface';
+
+    /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
@@ -20,7 +27,7 @@ class ChildrenAwareInterfaceTest extends TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\\Data\\Hierarchy\\ChildrenAwareInterface')
+        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getChildren()
             ->hasChildren()
             ->new();
@@ -37,7 +44,7 @@ class ChildrenAwareInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf('Dhii\\Data\\Hierarchy\\ChildrenAwareInterface', $subject, 'A valid instance of the test subject could not be created');
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
         $this->assertInstanceOf('Dhii\\Data\\Hierarchy\\HasChildrenCapableInterface', $subject, 'Test subject does not implement required interface');
     }
 }
